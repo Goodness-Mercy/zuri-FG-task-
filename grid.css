@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: hsl(250, 29%, 15%);
+    display: flex;
+    place-items: center;
+    min-height: 100vh;
+}
+main {
+    display: grid;
+    grid-template-areas: 
+    "a a b"
+    "c d d"
+    "c e e";
+    gap: 10px;
+    width: 50%;
+    margin: auto;
+}
+main div {
+    padding: 40px;
+    min-height: 100px;
+    
+}
+.item-a {
+    background-color: hsl(12, 93%, 55%);
+    grid-area: a;
+}
+.item-b {
+    background-color: hsla(34, 95%, 57%, 0.973);
+    grid-area: b;
+}
+.item-c {
+    background-color: hsl(128, 91%, 31%);
+    grid-area: c;
+}
+.item-d {
+    background-color: hsl(202, 92%, 46%);
+    grid-area: d;
+}
+.item-e {
+    background-color: hsl(202, 92%, 46%);
+    grid-area: e;
+}
